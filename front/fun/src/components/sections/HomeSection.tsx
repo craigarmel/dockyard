@@ -3,9 +3,15 @@ import { useEffect, useRef } from "react";
 const SHIP_BG ="/home.png"
 
 const bubbleData = [
-    { href: "#research", label: "Research", className: "left" },
-    { href: "#history", label: "History", className: "center" },
-    { href: "#exploration", label: "Exploration", className: "right" },
+    { href: "/Search", label: "Search", className: "left" },
+    { href: "/History", label: "History", className: "center" },
+    { href: "/DockyardLife", label: (
+        <>
+            Dockyard
+            <br />
+            Life
+        </>
+    ), className: "right" },
 ];
 
 export default function HomeSection() {
@@ -119,16 +125,22 @@ export default function HomeSection() {
             <div className="absolute top-[75%] left-0 w-full h-[10px] bg-gradient-to-b from-white/40 to-[#00699433] z-30 pointer-events-none" />
             <div className="absolute top-[75%] left-0 w-full h-[25%] bg-[radial-gradient(ellipse_at_center_top,rgba(255,255,255,0.2)_0%,rgba(0,0,0,0)_70%)] z-25 pointer-events-none" />
             {/* Title */}
-            <div className="absolute top-[10%] left-0 w-full text-center font-['Playfair_Display'] text-5xl md:text-7xl font-bold text-white drop-shadow-lg z-40 opacity-0 animate-fadeInTitle">
-                Naval Shipyards
-            </div>
-            <div className="absolute top-[20%] left-0 w-full text-center font-light text-lg md:text-2xl text-white drop-shadow-lg z-40 opacity-0 animate-fadeInSubtitle">
-                A dive into maritime history
+            <div className="absolute top-[12%] left-0 w-full flex justify-center z-40">
+                <h1
+                    className="font-['Playfair_Display'] text-[3rem] md:text-[5rem] font-extrabold tracking-widest text-white drop-shadow-lg animate-fadeInTitle"
+                    style={{
+                        letterSpacing: "0.25em",
+                        textShadow: "0 4px 32px rgba(24,82,177,0.5), 0 1px 0 #fff",
+                        filter: "brightness(1.2)",
+                    }}
+                >
+                    DOCKYARD
+                </h1>
             </div>
             {/* Bubbles */}
             {bubbleData.map((b) => (
                 <a
-                    key={b.label}
+                    key={b.href}
                     href={b.href}
                     className={`bubble-${b.className} absolute z-50 flex items-center justify-center rounded-full cursor-pointer opacity-0 animate-bubbleRise${b.className.charAt(0).toUpperCase() + b.className.slice(1)} animate-floatBubble`}
                     style={{

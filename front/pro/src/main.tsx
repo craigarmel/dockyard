@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.VITE_BASE_URL || '/dockyard/'}>
+    <BrowserRouter basename={import.meta.env.BASE_URL_VITE || '/dockyard/'}>
       <App />
     </BrowserRouter>
   )

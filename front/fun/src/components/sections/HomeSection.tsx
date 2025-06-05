@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const SHIP_BG ="/home.png"
 
@@ -139,9 +140,9 @@ export default function HomeSection() {
             </div>
             {/* Bubbles */}
             {bubbleData.map((b) => (
-                <a
+                <Link
                     key={b.href}
-                    href={b.href}
+                    to={b.href}
                     className={`bubble-${b.className} absolute z-50 flex items-center justify-center rounded-full cursor-pointer opacity-0 animate-bubbleRise${b.className.charAt(0).toUpperCase() + b.className.slice(1)} animate-floatBubble`}
                     style={{
                         width: window.innerWidth < 768 ? 102 : 153,
@@ -168,7 +169,7 @@ export default function HomeSection() {
                     >
                         {b.label}
                     </span>
-                </a>
+                </Link>
             ))}
             {/* Particles */}
             <div

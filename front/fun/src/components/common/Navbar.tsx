@@ -69,17 +69,17 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-2 bg-theme/95 rounded-lg shadow-lg">
             <div className="flex flex-col space-y-4 px-4 py-2">
-              <Link to="/" className="text-white hover:text-gray-200 transition-colors py-2">
-                Home
+              <Link to="/History" className="text-white hover:text-gray-200 transition-colors py-2">
+          History
               </Link>
-              <Link to="/services" className="text-white hover:text-gray-200 transition-colors py-2">
-                Services
+              <Link to="/Search" className="text-white hover:text-gray-200 transition-colors py-2">
+          Search
               </Link>
-              <Link to="/trust" className="text-white hover:text-gray-200 transition-colors py-2">
-                Trust
+              <Link to="/DockyardLife" className="text-white hover:text-gray-200 transition-colors py-2">
+          DockyardLife
               </Link>
-              <Link to="/contact" className="text-white hover:text-gray-200 transition-colors py-2">
-                Contact
+              <Link to='http://localhost:3000' className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
+          Admin
               </Link>
             </div>
           </div>

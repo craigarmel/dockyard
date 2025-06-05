@@ -1,0 +1,131 @@
+services:
+  # MongoDB Database - THIS WAS MISSING!
+  mongo:
+    image: mongo:7
+    container_name: mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: Dockyard
+      # Optional: Add authentication
+      # MONGO_INITDB_ROOT_USERNAME: admin
+      # MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # API Gateway
+  api_gateway:
+    build: ./back/api_gateway
+    container_name: api-gateway
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - dockyardlife
+      - history
+      - search
+    networks:
+      - app-network
+
+  # Dockyard Life Service
+  dockyardlife:
+    build: ./back/services/dockyardlife
+    container_name: dockyardlife-service
+    restart: unless-stopped
+    ports:
+      - "5003:5003"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017
+      - DB_NAME=Dockyard
+      - PORT=5003
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  # History Service
+  history:
+    build: ./back/services/history
+    container_name: history-service
+    restart: unless-stopped
+    ports:
+      - "5002:5002"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017
+      - DB_NAME=Dockyard
+      - PORT=5002
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  # Search Service
+  search:
+    build: ./back/services/search
+    container_name: search-service
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017
+      - DB_NAME=Dockyard
+      - PORT=5001
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  # Frontend - Fun
+  fun:
+    build: ./front/fun
+    container_name: frontend-fun
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - api_gateway
+    networks:
+      - app-network
+
+  # Frontend - Pro
+  pro:
+    build: ./front/pro
+    container_name: frontend-pro
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - api_gateway
+    networks:
+      - app-network
+
+volumes:
+  mongo_data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

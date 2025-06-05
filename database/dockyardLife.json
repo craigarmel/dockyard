@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Life as a Dockyard Apprentice",
+        "subtitle": "Personal Accounts from Young Workers",
+        "content": "The apprenticeship system at Portsmouth Dockyard was renowned for producing some of the finest skilled craftsmen in the Royal Navy. These personal accounts share the experiences of young men who entered the dockyard as boys and emerged as master shipwrights.",
+        "heading": "Learning the Trade",
+        "text": "Starting at just 16 years old, apprentices faced a rigorous seven-year training program that would shape their entire careers. The combination of classroom learning and hands-on workshop experience created craftsmen whose skills were second to none in the naval world.",
+        "sections": [
+            {
+                "title": "First Day Nerves",
+                "content": "Walking through those massive gates for the first time was both terrifying and exhilarating. The noise of hammers on steel, the smell of hot metal, and the sight of enormous ships under construction - it was overwhelming for a young lad from the countryside."
+            },
+            {
+                "title": "Workshop Training",
+                "content": "We learned everything from basic metalwork to advanced ship construction techniques. The old craftsmen were tough taskmasters, but they passed down knowledge that had been accumulated over generations. Every mistake was a lesson, every success a step forward."
+            },
+            {
+                "title": "Brotherhood of Workers",
+                "content": "The bonds formed during apprenticeship lasted a lifetime. We worked together, learned together, and looked out for each other. The dockyard wasn't just a workplace - it was a community where everyone had each other's backs."
+            }
+        ]
+    },
+    {
+        "title": "Women in the Dockyard",
+        "subtitle": "Breaking Barriers During Wartime",
+        "content": "During both World Wars, women stepped into roles traditionally held by men at Portsmouth Dockyard. Their contributions were invaluable, proving that skill and dedication knew no gender boundaries in the fight for freedom.",
+        "heading": "Stepping Up in Crisis",
+        "text": "When the men went to war, the women of Portsmouth answered the call. They learned to rivet, weld, and build with the same precision and pride as their male counterparts, keeping the shipyard running when the nation needed it most.",
+        "sections": [
+            {
+                "title": "Learning New Skills",
+                "content": "Many of us had never held a rivet gun before, but within weeks we were working on destroyers and frigates. The supervisors were skeptical at first, but our work spoke for itself. We proved that determination could overcome any preconception."
+            },
+            {
+                "title": "Dangerous Work",
+                "content": "The work was dangerous - hot metal, heavy machinery, and the constant threat of air raids. But we knew that every ship we helped build could save lives and bring our loved ones home safely. That knowledge gave us strength to face any challenge."
+            },
+            {
+                "title": "Lasting Legacy",
+                "content": "After the war, many women were expected to return to traditional roles, but the experience changed us forever. We had proven our capabilities and opened doors for future generations of women in industrial work."
+            }
+        ]
+    },
+    {
+        "title": "The Great Ships",
+        "subtitle": "Building Legends of the Royal Navy",
+        "content": "Portsmouth Dockyard has been the birthplace of some of the most famous ships in naval history. From HMS Victory to modern aircraft carriers, each vessel tells a story of craftsmanship, innovation, and national pride.",
+        "heading": "Monuments of Maritime Power",
+        "text": "Building a great ship was more than just a job - it was a calling. Every worker who placed a rivet or shaped a piece of steel knew they were creating something that would serve the nation for decades to come. These ships were our legacy, floating monuments to British naval supremacy.",
+        "sections": [
+            {
+                "title": "HMS Victory",
+                "content": "Working on Victory's restoration was like touching history itself. Every timber, every cannon, every detail had to be perfect. She wasn't just a ship - she was Nelson's flagship, a symbol of British naval might that had to be preserved for future generations."
+            },
+            {
+                "title": "Modern Aircraft Carriers",
+                "content": "Building the Queen Elizabeth-class carriers was the culmination of centuries of shipbuilding knowledge. These massive vessels required new techniques and technologies, but the fundamental principles remained the same - precision, quality, and pride in our work."
+            },
+            {
+                "title": "The Launch Day",
+                "content": "Nothing compared to the excitement of launch day. The entire dockyard would stop work to watch as our creation slid down the slipway and touched water for the first time. In that moment, months or years of hard work became a living, breathing ship ready to serve."
+            }
+        ]
+    },
+    {
+        "title": "Daily Life and Traditions",
+        "subtitle": "The Rhythm of Dockyard Work",
+        "content": "Life at Portsmouth Dockyard followed rhythms established over centuries. From the morning whistle to the end-of-shift rush to the pub, traditions bound the workforce together and created a unique culture that sustained workers through good times and bad.",
+        "heading": "More Than Just Work",
+        "text": "The dockyard was a world unto itself, with its own customs, language, and way of life. These traditions created a sense of belonging and continuity that connected each generation of workers to those who came before and those who would follow.",
+        "sections": [
+            {
+                "title": "The Morning Ritual",
+                "content": "Every day began with the blast of the works whistle at 7:30 AM. Thousands of workers would stream through the gates, each knowing exactly where they needed to be. The organized chaos of shift change was a sight to behold."
+            },
+            {
+                "title": "Pub Culture",
+                "content": "After work, the local pubs filled with dockyard workers sharing stories, solving the world's problems, and strengthening the bonds that made the workplace more than just a job. These conversations often led to innovations and improvements in our work."
+            },
+            {
+                "title": "Celebrating Milestones",
+                "content": "Every major milestone - a ship launch, a successful sea trial, or the completion of a major refit - was celebrated by the entire dockyard community. These celebrations reinforced our shared pride and commitment to excellence."
+            }
+        ]
+    }
+]

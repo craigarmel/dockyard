@@ -123,24 +123,24 @@ export default function LinksPage() {
             />
             {/* Content scrolls above background */}
             <div
-                className={`relative z-10 bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl max-w-3xl w-full p-8 border border-white/30 overflow-y-auto transition-opacity duration-1000 ${
+                className={`relative z-10 w-full max-w-2xl md:max-w-3xl mx-auto bg-white/10 rounded-2xl shadow-2xl px-6 md:px-12 py-10 md:py-14 backdrop-blur-lg border border-white/10 transition-opacity duration-1000 ${
                     fadeIn ? "opacity-100" : "opacity-0"
-                }`}
+                } text-white`}
             >
-                <h1 className="text-4xl font-extrabold mb-6 text-center text-blue-900 drop-shadow-lg tracking-tight">
-                    Liens utiles
+                <h1 className="text-4xl font-extrabold mb-6 text-center text-blue-100 drop-shadow-lg tracking-tight">
+                    Links
                 </h1>
-                <p className="mb-2 text-gray-700 text-center text-lg">
-                    Cette page donne accès à des informations utiles sur le Dockyard et ses environs.
+                <p className="text-base md:text-xl mt-8 mb-4 font-semibold text-blue-100 text-center">
+                    This page provides access to useful information about the Dockyard and its surroundings.
                 </p>
                 <p className="mb-8 text-center">
                     <a
                         href="https://www.facebook.com/PRDHT"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-700 underline hover:text-blue-900 font-semibold transition-colors duration-200"
+                        className="text-blue-200 underline hover:text-blue-400 font-semibold transition-colors duration-200"
                     >
-                        Cliquez ici pour plus d'informations PRDHT sur Facebook
+                        Click here for more PRDHT information on Facebook
                     </a>
                 </p>
                 <ul className="space-y-8 max-h-[60vh] overflow-y-auto pr-2">
@@ -150,12 +150,12 @@ export default function LinksPage() {
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="font-semibold text-blue-800 hover:text-blue-600 break-all text-lg transition-colors duration-200"
+                                className="font-semibold text-blue-200 hover:text-blue-400 break-all text-lg transition-colors duration-200"
                             >
                                 {link.title}
                             </a>
-                            <div className="mt-1 text-sm text-blue-700 break-all">{link.url}</div>
-                            <div className="mt-2 text-gray-600 text-base">{link.description}</div>
+                            <div className="mt-1 text-blue-100 break-all">{link.url}</div>
+                            <div className="mt-2 text-blue-50 text-base">{link.description}</div>
                         </li>
                     ))}
                 </ul>
@@ -164,11 +164,11 @@ export default function LinksPage() {
                         href="https://www.facebook.com/PRDHT"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-700 underline hover:text-blue-900 font-semibold transition-colors duration-200"
+                        className="text-blue-200 underline hover:text-blue-400 font-semibold transition-colors duration-200"
                     >
                         Like us on Facebook
                     </a>
-                    <div className="mt-2 text-xs text-gray-500">
+                    <div className="mt-2 text-xs text-blue-100">
                         Copyright © 2024 PRDHT-JM
                     </div>
                 </footer>

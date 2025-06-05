@@ -102,7 +102,7 @@ export default function HomeSection() {
                 top: window.innerHeight * 0.875,
                 behavior: "smooth",
             });
-        }, 1000);
+        }, 3000);
     }, []);
 
     return (
@@ -121,9 +121,9 @@ export default function HomeSection() {
                 <div className="absolute inset-0 bg-gradient-to-b from-[#0a192f] to-[#0d2e5a] -z-10" />
             </div>
             {/* Water overlays */}
-            <div className="absolute top-[75%] left-0 w-full h-[25%] bg-gradient-to-b from-[#0033664d] to-[#00143c99] z-20 pointer-events-none" />
-            <div className="absolute top-[75%] left-0 w-full h-[10px] bg-gradient-to-b from-white/40 to-[#00699433] z-30 pointer-events-none" />
-            <div className="absolute top-[75%] left-0 w-full h-[25%] bg-[radial-gradient(ellipse_at_center_top,rgba(255,255,255,0.2)_0%,rgba(0,0,0,0)_70%)] z-25 pointer-events-none" />
+            <div className="absolute top-[80%] left-0 w-full h-[20%] bg-gradient-to-b from-[#0033664d] to-[#00143c99] z-20 pointer-events-none" />
+            <div className="absolute top-[80%] left-0 w-full h-[10px] bg-gradient-to-b from-white/40 to-[#00699433] z-30 pointer-events-none" />
+            <div className="absolute top-[80%] left-0 w-full h-[20%] bg-[radial-gradient(ellipse_at_center_top,rgba(255,255,255,0.2)_0%,rgba(0,0,0,0)_70%)] z-25 pointer-events-none" />
             {/* Title */}
             <div className="absolute top-[12%] left-0 w-full flex justify-center z-40">
                 <h1
@@ -152,7 +152,7 @@ export default function HomeSection() {
                                 : b.className === "center"
                                 ? `calc(50% - ${(window.innerWidth < 768 ? 51 : 76.5)}px)`
                                 : `calc(75% - ${(window.innerWidth < 768 ? 51 : 76.5)}px)`,
-                        top: "77.5%",
+                        top: "77%",
                         background:
                             "radial-gradient(circle at 30% 30%,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.4) 25%,rgba(72,154,204,0.2) 50%,rgba(24,82,177,0.3) 75%)",
                         boxShadow:

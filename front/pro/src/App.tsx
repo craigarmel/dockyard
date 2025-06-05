@@ -3,8 +3,6 @@ import HomePage from './pages/HomePage';
 import DocumentationPage from './pages/DocumentationPage.tsx';
 import TrustPage from './pages/TrustPage.tsx';
 import './index.css';
-import SearchPage from '../../fun/src/pages/SearchPage.tsx';
-
 
 function App() {
   return (
@@ -15,7 +13,6 @@ function App() {
         <Route path="/about" element={<HomePage />} /> {/* Placeholder for About Us page */}
         <Route path="/trust" element={<TrustPage />} />
         <Route path="/explore" element={<HomePage />} /> {/* Placeholder for Explore page */}
-        <Route path="/search" element={<SearchPage />} /> {/* Placeholder for Search page */}
         <Route path="*" element={<HomePage />} /> {/* Fallback route */}
       </Routes>
     </Router>

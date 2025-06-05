@@ -1,0 +1,80 @@
+[
+    {
+        "id": 101,
+        "type": "article",
+        "headline": "Local Shipwright Celebrates 40 Years at Dockyard",
+        "date": "1981-08-15",
+        "content": "William Smith of Queen Street was honored yesterday for his four decades of dedicated service to Portsmouth Dockyard. Starting as an apprentice in 1941, Smith has worked on some of the Royal Navy's most important vessels...",
+        "mentions": ["William Thomas Smith", "HMS Ark Royal", "apprenticeship program"],
+        "database": "tridentNewspaper",
+        "issueNumber": "TN-1981-32",
+        "page": 3,
+        "category": "personnel",
+        "photographer": "John Stevens"
+    },
+    {
+        "id": 102,
+        "type": "obituary",
+        "headline": "Remembering Charles Wellington: Master Boilermaker",
+        "date": "1951-02-10",
+        "content": "Charles Wellington, 60, passed away peacefully at his home on High Street. A master boilermaker with 45 years of service, Wellington was instrumental in the transition from coal to oil-fired naval systems...",
+        "mentions": ["Charles Wellington", "boilermaker", "steam systems", "Henry Blackwood"],
+        "database": "tridentNewspaper",
+        "issueNumber": "TN-1951-06",
+        "page": 2,
+        "category": "obituary",
+        "photographer": null
+    },
+    {
+        "id": 103,
+        "type": "announcement",
+        "headline": "New Apprenticeship Program Launched",
+        "date": "1948-01-20",
+        "content": "Portsmouth Dockyard announces the expansion of its apprenticeship program to include electrical trades. Young Robert Davies from King's Road is among the first intake of electrical apprentices...",
+        "mentions": ["Robert Davies", "electrical apprentice", "apprenticeship program"],
+        "database": "tridentNewspaper",
+        "issueNumber": "TN-1948-03",
+        "page": 1,
+        "category": "announcement",
+        "photographer": "Mary Wilson"
+    },
+    {
+        "id": 104,
+        "type": "article",
+        "headline": "Women Workers Excel in Wartime Production",
+        "date": "1943-11-05",
+        "content": "The contribution of women workers to the war effort continues to exceed expectations. Margaret Fletcher and Mary Thompson have been recognized for their outstanding work in ship construction...",
+        "mentions": ["Margaret Rose Fletcher", "Mary Elizabeth Thompson", "wartime production", "women workers"],
+        "database": "tridentNewspaper",
+        "issueNumber": "TN-1943-44",
+        "page": 1,
+        "category": "wartime",
+        "photographer": "Ernest Brown"
+    },
+    {
+        "id": 105,
+        "type": "feature",
+        "headline": "HMS Victory Restoration: A Labor of Love",
+        "date": "1965-07-22",
+        "content": "The ongoing restoration of HMS Victory represents one of the most important heritage projects at Portsmouth Dockyard. Marine engineer James Mitchell leads the technical aspects of preserving Nelson's flagship...",
+        "mentions": ["James Mitchell", "HMS Victory", "restoration", "marine engineering"],
+        "database": "tridentNewspaper",
+        "issueNumber": "TN-1965-29",
+        "page": 4,
+        "category": "heritage",
+        "photographer": "David Clarke"
+    },
+    {
+        "id": 106,
+        "type": "social",
+        "headline": "Dockyard Christmas Celebrations",
+        "date": "1965-12-24",
+        "content": "Annual Christmas celebrations at the dockyard brought together families and workers. The festivities included carol singing, children's parties, and the traditional Christmas dinner organized by the Workers' Social Club...",
+        "mentions": ["Christmas celebrations", "Workers' Social Club", "families"],
+        "database": "tridentNewspaper",
+        "issueNumber": "TN-1965-51",
+        "page": 6,
+        "category": "social",
+        "photographer": "Robert Anderson"
+    }
+]

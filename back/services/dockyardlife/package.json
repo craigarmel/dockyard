@@ -1,0 +1,26 @@
+{
+  "name": "dockyard-dockyardlife-service",
+  "version": "1.0.0",
+  "description": "DockyardLife service for personal stories and experiences",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "dockyardlife",
+    "chapters",
+    "microservice",
+    "dockyard"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

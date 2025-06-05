@@ -1,10 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+// In your main App component
+import { BrowserRouter } from 'react-router-dom'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function App() {
+  return (
+    <BrowserRouter basename={import.meta.env.VITE_BASE_URL || '/dockyard/'}>
+      <App />
+    </BrowserRouter>
+  )
+}

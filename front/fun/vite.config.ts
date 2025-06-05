@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(),
         tailwindcss()
   ],
-  base: process.env.BASE_URL_VITE || '/dockyard/',
+  base: process.env.BASE_URL_VITE || '/',
   server: {
     host: '0.0.0.0',
     port: 4000 

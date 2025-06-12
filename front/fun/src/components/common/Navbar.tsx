@@ -41,7 +41,7 @@ const Navbar = () => {
               <Link to="/DockyardLife" className="text-white hover:text-gray-200 transition-colors">
                 DockyardLife
               </Link>
-              <Link to={{ pathname: process.env.PRO_WEBSITE_URL }} className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
+              <Link to="localhost:4000" className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
                 Admin
               </Link>
             </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <Link to="/DockyardLife" className="text-white hover:text-gray-200 transition-colors py-2">
           DockyardLife
               </Link>
-              <Link to={{ pathname: process.env.PRO_WEBSITE_URL }} className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
+              <Link to="localhost:4000" className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
           Admin
               </Link>
             </div>

@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const { MongoClient } = require('mongodb');
+const http = require('http');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -8,6 +9,13 @@ const PORT = process.env.PORT || 5001;
 app.use(cors());
 app.use(express.json());
 
+// Create a server object
+const server = http.createServer((req, res) => {
+    // Set the response header
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    // Write some text to the response
+    res.end('Welcome to my simple Node.js app!');
+});
 // Mock data based on ChapterParsed type
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://mongo:27017';
 const DB_NAME = 'Dockyard';

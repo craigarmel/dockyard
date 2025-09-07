@@ -47,7 +47,7 @@ const Navbar = () => {
               <Link to="/search" className="text-white hover:text-gray-200 transition-colors">
                 Search
               </Link> */}
-              <Link to='http://localhost:4000' className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
+              <Link to='https://dockyard-fun.vercel.app/' className='bg-transparent px-6 py-2 rounded-lg text-white hover:text-black hover:bg-white border-2 border-white transition-colors transition'>
                 Explore
               </Link>
             </div>

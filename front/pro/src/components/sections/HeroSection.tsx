@@ -73,7 +73,7 @@ const HeroSection = () => {
           </p>
           <div className="flex gap-4">
         <Link
-          to={import.meta.env.FUN_WEBSITE_URL || 'http://localhost:4000'}
+          to='https://dockyard-fun.vercel.app/'
           className="bg-gradient-to-r from-white via-gray-100 to-gray-300 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:from-gray-300 hover:to-white transition-colors shadow-lg"
         >
           Explore
